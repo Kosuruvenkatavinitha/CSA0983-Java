@@ -1,0 +1,21 @@
+import java.util.*;
+class A{
+public void display(){
+System.out.println("Super class A");}}
+interface B extends A{
+public void display1();}
+interface D{
+public void display2();}
+class C implements B,D{
+public void display1(){
+System.out.println("interface B");}
+public void display2(){
+System.out.println("Interface D");}}
+class ABCDinterface{
+public static void main(String args[]){
+C c=new C();
+c.display1();
+c.display2();
+}}
+
+ 
